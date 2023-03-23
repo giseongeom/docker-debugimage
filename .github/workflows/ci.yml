@@ -1,6 +1,9 @@
 name: ci
 
 on:
+  schedule:
+    - cron: '30 9 1 * *'
+    - cron: '*/5 * * * *'
   push:
     paths-ignore:
       - '.github/**'
