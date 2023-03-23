@@ -23,3 +23,14 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+
+      - name: Build and Publish image
+        id: docker_build
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          platforms: linux/amd64
+          push: true
+          tags:
+            - ${{ secrets.DOCKER_HUB_USERNAME }}/toolbox:latest
+            - ${{ secrets.DOCKER_HUB_USERNAME }}/toolbox:22.04
