@@ -15,5 +15,4 @@ COPY custom-scripts/*.sh /tmp/custom-scripts/
 RUN bash /tmp/custom-scripts/install-curl.sh
 RUN bash /tmp/custom-scripts/install-tcping.sh
 RUN bash /tmp/custom-scripts/install-awscli.sh
-RUN bash /tmp/custom-scripts/install-azure-cli.sh
 RUN rm -rf /tmp/custom-scripts
