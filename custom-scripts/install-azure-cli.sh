@@ -6,5 +6,5 @@ if [ "$(id -u)" -ne 0 ]; then
     exit 1
 fi
 
-curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 az version && echo "Azure CLI Installation is Done!"
