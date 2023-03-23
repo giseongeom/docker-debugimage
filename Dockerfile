@@ -6,7 +6,9 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
         ca-certificates \
         curl \
         dos2unix \
+        iproute2 \
         jq \
+        net-tools \
         unzip \
         vim-tiny \
         wget
