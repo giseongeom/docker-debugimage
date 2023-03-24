@@ -9,6 +9,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
         iproute2 \
         jq \
         net-tools \
+        ssh-tools \
         unzip \
         vim-tiny \
         wget
