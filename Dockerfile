@@ -7,10 +7,12 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
         curl \
         dos2unix \
         iproute2 \
+        git \
         jq \
         lsb-core \
         net-tools \
         ssh-tools \
+        sudo \
         unzip \
         vim-tiny \
         wget
