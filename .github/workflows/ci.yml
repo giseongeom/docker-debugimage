@@ -1,8 +1,6 @@
 name: ci
 
 on:
-  schedule:
-    - cron: '30 9 1 * *'
   push:
     paths-ignore:
       - '.github/**'
@@ -32,4 +30,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/awscli:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/debug:latest

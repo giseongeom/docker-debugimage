@@ -8,6 +8,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
         dos2unix \
         iproute2 \
         jq \
+        lsb-core \
         net-tools \
         ssh-tools \
         unzip \
@@ -15,7 +16,10 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
         wget
 
 COPY custom-scripts/*.sh /tmp/custom-scripts/
-RUN bash /tmp/custom-scripts/install-curl.sh
-RUN bash /tmp/custom-scripts/install-tcping.sh
 RUN bash /tmp/custom-scripts/install-awscli.sh
+RUN bash /tmp/custom-scripts/install-azure-cli.sh
+RUN bash /tmp/custom-scripts/install-curl.sh
+RUN bash /tmp/custom-scripts/install-dog.sh
+RUN bash /tmp/custom-scripts/install-tcping.sh
+RUN bash /tmp/custom-scripts/install-yq.sh
 RUN rm -rf /tmp/custom-scripts
