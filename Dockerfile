@@ -20,6 +20,7 @@ RUN bash /tmp/custom-scripts/install-awscli.sh
 RUN bash /tmp/custom-scripts/install-azure-cli.sh
 RUN bash /tmp/custom-scripts/install-curl.sh
 RUN bash /tmp/custom-scripts/install-dog.sh
+RUN bash /tmp/custom-scripts/install-kubernetes-cli.sh
 RUN bash /tmp/custom-scripts/install-tcping.sh
 RUN bash /tmp/custom-scripts/install-yq.sh
 RUN rm -rf /tmp/custom-scripts
